@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
 
 function App() {
+  const [students, setStudents] = useState([]);
+  const [studentName, setStudentName] = useState("");
+
+  const [studentRollNumber, setStudentRollNumber] = useState("");
+
+  function handleChangestudentName(e) {
+    setStudentName(e.target.value);
+  }
+
+  function handleChangeStudentRollNumber(e) {
+    setStudentRollNumber(e.target.value);
+  }
+
+  function addStudent() {
+   const studentObject={name:studentName,rollNumber:studentRollNumber}
+
+   setStudents([...students,studentObject])
+    console.log(studentObject)
+
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <input
+        type="text"
+        name="studentName"
+        value={studentName}
+        onChange={handleChangestudentName}
+      />Student Name
+      <input
+        type="text"
+        name="studentRollNumber"
+        value={studentRollNumber}
+        onChange={handleChangeStudentRollNumber}
+      />Student Roll Number
+      <button onClick={addStudent}>Add Student</button>
     </div>
   );
 }
