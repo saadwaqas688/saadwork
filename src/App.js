@@ -15,29 +15,46 @@ function App() {
   }
 
   function addStudent() {
-   const studentObject={name:studentName,rollNumber:studentRollNumber}
+    const studentObject = {
+      name: studentName,
+      rollNumber: studentRollNumber,
+    };
 
-   setStudents([...students,studentObject])
-    console.log(studentObject)
-
+    setStudents([...students, studentObject]);
+    console.log(studentObject);
   }
 
   return (
     <div>
+      <label> Student Name</label>
       <input
         type="text"
         name="studentName"
         value={studentName}
         onChange={handleChangestudentName}
-      />Student Name
+      />
+      <br></br>
+       <label>Student Roll Number</label>
       <input
         type="text"
         name="studentRollNumber"
         value={studentRollNumber}
         onChange={handleChangeStudentRollNumber}
-      />Student Roll Number
+      />
+      <br></br>
       <button onClick={addStudent}>Add Student</button>
+      <div>
+      {
+        students.map((element)=> {
+          return(
+            <div> {element.name}</div>
+          )
+        })
+      }
+      </div>
+   
     </div>
+
   );
 }
 
