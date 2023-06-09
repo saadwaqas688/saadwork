@@ -12,20 +12,23 @@ code {
     monospace;
 }
 
+
 .parent {
   display: flex;
-  flex-wrap: nowrap;
-  background-color: yellow;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  background-color: pink;
 }
 
-
-
 .child {
-  background-color: blue;
-  width: 200px;
-  margin: 10px;
+  background-color:orange;
+  padding: 20px;
   text-align: center;
-  line-height: 105px;
-  font-size: 30px;
-  height:200px;
+  width: 25%; 
+  margin: 20px;
+}
+
+.month-name {
+  color: #333;
+  font-size: 20px;
 }

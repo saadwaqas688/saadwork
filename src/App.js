@@ -194,22 +194,94 @@
 //flex box
 
 
-function App() {
+// function App() {
 
 
 
+//   return (
+// <div className="parent">
+
+
+// <div className="child">1</div>
+//  <div className="child">2</div>
+// <div className="child">3</div>
+
+
+
+
+
+// </div>
+//   );
+// }
+
+// export default App;
+
+
+
+import React from 'react';
+
+const App = () => {
   return (
-<div className="parent">
+    <div className="parent">
 
 
-<div className="child">1</div>
-<div className="child">2</div>
-<div className="child">3</div>
+      <div className="child">
+        <h3 className="month-name">January</h3>
+      </div>
 
 
+      <div className="child">
+        <h3 className="month-name">february</h3>
+      </div>
 
-</div>
+
+       <div className="child">
+        <h3 className="month-name">march</h3>
+      </div>
+
+
+      <div className="child">
+        <h3 className="month-name">April</h3>
+      </div>
+
+      <div className="child">
+        <h3 className="month-name">may</h3>
+      </div>
+
+
+      <div className="child">
+        <h3 className="month-name">june</h3>
+      </div>
+
+
+      <div className="child">
+        <h3 className="month-name">july</h3>
+      </div>
+
+      <div className="child">
+        <h3 className="month-name">august</h3>
+      </div>
+
+      <div className="child">
+        <h3 className="month-name">semptember</h3>
+      </div>
+
+      <div className="child">
+        <h3 className="month-name">october</h3>
+      </div>
+
+      <div className="child">
+        <h3 className="month-name">november</h3>
+      </div>
+      <div className="child">
+        <h3 className="month-name">December </h3>
+      </div>
+
+
+    </div>
   );
 }
 
 export default App;
+
+  
