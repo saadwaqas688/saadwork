@@ -1,81 +1,81 @@
-// import { useState } from "react";
+import { useState } from "react";
 
-// function App() {
-//   const [students, setStudents] = useState([]);
-//   const [studentName, setStudentName] = useState("");
+function App() {
+  const [students, setStudents] = useState([]);
+  const [studentName, setStudentName] = useState("");
 
-//   const [studentRollNumber, setStudentRollNumber] = useState("");
+  const [studentRollNumber, setStudentRollNumber] = useState("");
 
-//   function handleChangestudentName(e) {
-//     setStudentName(e.target.value);
-//   }
+  function handleChangestudentName(e) {
+    setStudentName(e.target.value);
+  }
 
-//   function handleChangeStudentRollNumber(e) {
-//     setStudentRollNumber(e.target.value);
-//   }
+  function handleChangeStudentRollNumber(e) {
+    setStudentRollNumber(e.target.value);
+  }
 
-//   function addStudent() {
-//     const studentObject = {
-//       name: studentName,
-//       rollNumber: studentRollNumber,
-//     };
+  function addStudent() {
+    const studentObject = {
+      name: studentName,
+      rollNumber: studentRollNumber,
+    };
 
-//     setStudents([...students, studentObject]);
+    setStudents([...students, studentObject]);
     
-//   }
+  }
 
 
-//   function deleteStudent(rollNumber) {
-//     alert(rollNumber)
-//     let tempStudents=[...students]
-//      tempStudents=tempStudents.filter((element)=>element.rollNumber!==rollNumber)
-//     setStudents(tempStudents);
+  function deleteStudent(rollNumber) {
+    alert(rollNumber)
+    let tempStudents=[...students]
+     tempStudents=tempStudents.filter((element)=>element.rollNumber!==rollNumber)
+    setStudents(tempStudents);
     
-//   }
+  }
 
-//   return (
-//     <div>
-//       <label> Student Name</label>
-//       <input
-//         type="text"
-//         name="studentName"
-//         value={studentName}
-//         onChange={handleChangestudentName}
-//       />
-//       <br></br>
-//        <label>Student Roll Number</label>
-//       <input
-//         type="text"
-//         name="studentRollNumber"
-//         value={studentRollNumber}
-//         onChange={handleChangeStudentRollNumber}
-//       />
-//       <br></br>
-//       <button style={{marginLeft:"5px",background:"blue"}} onClick={addStudent}>Add Student</button>
+  return (
+    <div>
+      <label> Student Name</label>
+      <input
+        type="text"
+        name="studentName"
+        value={studentName}
+        onChange={handleChangestudentName}
+      />
+      <br></br>
+       <label>Student Roll Number</label>
+      <input
+        type="text"
+        name="studentRollNumber"
+        value={studentRollNumber}
+        onChange={handleChangeStudentRollNumber}
+      />
+      <br></br>
+      <button style={{marginLeft:"5px",background:"blue"}} onClick={addStudent}>Add Student</button>
 
-//       <div>
-//         <table>
-//       {
-//         students.map((element)=> {
-//           return(
-//             <div style={{display:"flex",marginTop:"50px"}}>
-//             <div> {element.name}</div>
-//             <button style={{marginLeft:"5px",background:"green"}} onClick={()=>deleteStudent(element.rollNumber)}>delete</button>
-//             </div>
+      <div>
+        <table>
+      {
+        students.map((element)=> {
+          return(
+            <div style={{display:"flex",marginTop:"50px"}}>
+            <div> {element.name}</div>
+            <button style={{marginLeft:"5px",background:"green"}} onClick={()=>deleteStudent(element.rollNumber)}>delete</button>
+            </div>
         
 
-//           )
-//         })
-//       }
-//       </table>
-//       </div>
+          )
+        })
+      }
+      </table>
+      </div>
    
-//     </div>
+    </div>
 
-//   );
-// }
+  );
+}
 
-// export default App;
+export default App;
 
 
 
