@@ -81,140 +81,140 @@ export default App;
 
 
 
-// import { useState } from "react";
+import { useState } from "react";
 
-// const divStyle = {
-//   display: 'flex',
-//   flexDirection: 'column',
-//   justifyContent: 'center',
-//   alignItems: 'center',
-//   backgroundColor: 'yellow',
-//   width: '100%',
-//   height: '700px',
-// };
+const divStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  backgroundColor: 'yellow',
+  width: '100%',
+  height: '700px',
+};
 
-// const countStyle = {
-//   marginBottom: '10px',
-//   fontSize: '100px',
-// };
-
-
-// const buttonStyle = {
-//   marginBottom: '10px',
-//   padding: '10px 20px',
-//   backgroundColor: 'orange',
-//   color: 'white',
-//   border: 'none',
-//   borderRadius: '4px',
-//   fontSize: '16px',
-//   cursor: 'pointer',
-// };
-
-// function App() {
-//   const [count, setCount] = useState(0);
+const countStyle = {
+  marginBottom: '10px',
+  fontSize: '100px',
+};
 
 
-//   function handleIncrement() {
-//     let newCount=count+1
-//     setCount(newCount);
-//   }
+const buttonStyle = {
+  marginBottom: '10px',
+  padding: '10px 20px',
+  backgroundColor: 'orange',
+  color: 'white',
+  border: 'none',
+  borderRadius: '4px',
+  fontSize: '16px',
+  cursor: 'pointer',
+};
 
-//   function handleDecrement() {
-//     let newCount=count-1
-//     setCount(newCount); 
-//    }
-
-
-//   return (
-//     <div style={divStyle}>
-//     <h3 style={countStyle}>{count}</h3>
-//     <button style={buttonStyle} onClick={handleIncrement}>Increment</button>
-//     <button style={buttonStyle} onClick={handleDecrement}>Decrement</button>
-//     </div>
-//   );
-// }
-
-// export default App;
+function App() {
+  const [count, setCount] = useState(0);
 
 
+  function handleIncrement() {
+    let newCount=count+1
+    setCount(newCount);
+  }
+
+  function handleDecrement() {
+    let newCount=count-1
+    setCount(newCount); 
+   }
 
 
+  return (
+    <div style={divStyle}>
+    <h3 style={countStyle}>{count}</h3>
+    <button style={buttonStyle} onClick={handleIncrement}>Increment</button>
+    <button style={buttonStyle} onClick={handleDecrement}>Decrement</button>
+    </div>
+  );
+}
 
-
-
-// import React, { useState } from 'react';
-
-// const App = () => {
-//   const [isOn, setIsOn] = useState(false);
-
-//   const bulbStyle = {
-//     width: '100px',
-//     height: '100px',
-//     borderRadius: '50%',
-//     backgroundColor: isOn ? 'yellow' : 'gray',
-//     boxShadow: isOn ? '0 0 10px yellow' : 'none',
-//     margin: '20px',
-//   };
-
-//   const buttonStyle = {
-//     padding: '10px 20px',
-//     backgroundColor: 'lightblue',
-//     color: 'white',
-//     border: 'none',
-//     borderRadius: '4px',
-//     fontSize: '16px',
-//     cursor: 'pointer',
-//     marginRight: '10px',
-//   };
-
-//   const handleTurnOn = () => {
-//     setIsOn(true);
-//   };
-
-//   const handleTurnOff = () => {
-//     setIsOn(false);
-//   };
-
-//   return (
-//     <div>
-//       <div style={bulbStyle}></div>
-//       <button style={buttonStyle} onClick={handleTurnOn}>On</button>
-//       <button style={buttonStyle} onClick={handleTurnOff}>Off</button>
-//     </div>
-//   );
-// };
-
-// export default App;
+export default App;
 
 
 
 
 
 
-//flex box
+
+import React, { useState } from 'react';
+
+const App = () => {
+  const [isOn, setIsOn] = useState(false);
+
+  const bulbStyle = {
+    width: '100px',
+    height: '100px',
+    borderRadius: '50%',
+    backgroundColor: isOn ? 'yellow' : 'gray',
+    boxShadow: isOn ? '0 0 10px yellow' : 'none',
+    margin: '20px',
+  };
+
+  const buttonStyle = {
+    padding: '10px 20px',
+    backgroundColor: 'lightblue',
+    color: 'white',
+    border: 'none',
+    borderRadius: '4px',
+    fontSize: '16px',
+    cursor: 'pointer',
+    marginRight: '10px',
+  };
+
+  const handleTurnOn = () => {
+    setIsOn(true);
+  };
+
+  const handleTurnOff = () => {
+    setIsOn(false);
+  };
+
+  return (
+    <div>
+      <div style={bulbStyle}></div>
+      <button style={buttonStyle} onClick={handleTurnOn}>On</button>
+      <button style={buttonStyle} onClick={handleTurnOff}>Off</button>
+    </div>
+  );
+};
+
+export default App;
 
 
-// function App() {
-
-
-
-//   return (
-// <div className="parent">
-
-
-// <div className="child">1</div>
-//  <div className="child">2</div>
-// <div className="child">3</div>
 
 
 
 
+flex box
 
-// </div>
-//   );
-// }
 
-// export default App;
+function App() {
+
+
+
+  return (
+<div className="parent">
+
+
+<div className="child">1</div>
+ <div className="child">2</div>
+<div className="child">3</div>
+
+
+
+
+
+</div>
+  );
+}
+
+export default App;
 
 
 
